@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+.conteudo {
+    background: #FFFFFF;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+.cabecalho {
+    background: #FFFFFF;
+    box-shadow:  5px 5px rgb(240, 235, 235);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.cabecalho ul {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*.navegacao {
+	display: inline-block;
+}*/
+
+.cabecalho_logo {
+    display: inline;
+    vertical-align: middle;
+    
+}
+
+.cabecalho_logo img{
+    width: 150px;
+}
+
+.navegacao_main {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80vw;
+}
+
+.navegacao_main a {
+    color: #1351d8;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+
+nav li {
+    display: inline;
+    list-style: none;
+}
+
+main {
+    min-height: calc(100% - 167px);
+}
+
+
+.navegacao_main img {
+    width: 28px;
+}
+
+.rodape {
+    background: #1B357E;
+    padding: 20px;
+}
+.rodape_logo{
+    display: inline;
+    float: right;
+    margin-right: 40px;
+}
+
+.redes_sociais_cor {
+    color: #ffffff;
+    vertical-align: super;
+}
+
+.form {
+  display: block;
+  width: 300px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  height: 26px;
+  margin: 8px;
+  font-size: 13px;
+  padding: 5px;
+}
+
+select.form {
+  width: 310px;
+  height: 36px;
+  color: #807d7d;
+}
+
+
+main div {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.forms {
+  display: block;
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+  font-weight: 800;
+}
+
+
+button {
+  width: 200px;
+  height: 40px;
+  margin-right: 8px;
+  float: right;
+}
+
+.titulo {
+  margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .cabecalho {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+  }
+
+  .cabecalho_logo img {
+      width: 80px;
+      margin-bottom: 10px;
+  }
+
+  .navegacao_main ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .navegacao_main a {
+      font-size: 14px;
+      margin: 0;
+  }
+
+  .forms {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+  }
+
+  .forms img {
+      max-width: 200px; /* Reduzir o tamanho da imagem */
+  }
+
+  .form {
+      width: 90%; /* Ajustar a largura dos campos */
+  }
+
+  button {
+      width: 90%; /* Ajustar a largura do botão */
+  }
+
+  .rodape {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+  }
+
+  .rodape_logo {
+      margin-left: 0;
+      margin-top: -23px;
+  }
+
+  .rodape_logo img {
+      width: 50px;
+  }
+}

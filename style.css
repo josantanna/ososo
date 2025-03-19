@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+.conteudo {
+    background: #FFFFFF;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+.cabecalho {
+    background: #FFFFFF;
+    box-shadow:  5px 5px rgb(240, 235, 235);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.cabecalho ul {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*.navegacao {
+	display: inline-block;
+}*/
+
+.cabecalho_logo {
+    display: inline;
+    vertical-align: middle;
+    
+}
+
+.cabecalho_logo img{
+    width: 150px;
+}
+
+.navegacao_main {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80vw;
+}
+
+.navegacao_main a {
+    color: #1351d8;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+
+nav li {
+    display: inline;
+    list-style: none;
+}
+
+main {
+    min-height: calc(100% - 167px);
+}
+
+.conteudo_carro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.conteudo_carro p{
+    color: #0f1627;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hover:hover{
+  color: #1351d8;
+  
+}
+.navegacao_main img {
+    width: 28px;
+}
+
+
+.rodape {
+    background: #1B357E;
+    padding: 20px;
+}
+.rodape_logo{
+    display: inline;
+    float: right;
+    margin-right: 40px;
+}
+
+.redes_sociais_cor {
+    color: #ffffff;
+    vertical-align: super;
+}
+
+/* Ajustes para o cabeçalho em telas pequenas */
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column; /* Alinhar itens verticalmente */
+        align-items: center;
+        padding: 10px 0; /* Reduzir o padding */
+    }
+
+    .cabecalho_logo img {
+        width: 80px; /* Reduzir o tamanho da logo */
+        margin-bottom: 10px; /* Espaço entre a logo e a navegação */
+    }
+
+    .navegacao_main {
+        width: 100%; /* Ocupar toda a largura */
+    }
+
+    .navegacao_main ul {
+        flex-direction: column; /* Alinhar itens verticalmente */
+        align-items: center;
+        gap: 10px; /* Espaço entre os itens */
+    }
+
+    .navegacao_main a {
+        font-size: 14px; /* Reduzir o tamanho da fonte */
+        margin: 0; /* Remover margens laterais */
+    }
+}
+
+/* Ajustes para o conteúdo principal em telas pequenas */
+@media (max-width: 768px) {
+    .conteudo_carro {
+        margin-top: 20px; /* Mover o conteúdo para baixo */
+    }
+
+    .conteudo_carro img {
+        width: 90%; /* Reduzir a largura da imagem */
+        max-width: 250px; /* Limitar o tamanho máximo */
+    }
+
+    .conteudo_carro p {
+        font-size: 12px; /* Reduzir o tamanho da fonte */
+        padding: 0 10px; /* Adicionar padding lateral */
+        text-align: center; /* Centralizar o texto */
+    }
+}
+
+/* Ajustes para o rodapé em telas pequenas */
+@media (max-width: 768px) {
+    .rodape {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        align-items: center; /* Centraliza tudo */
+        padding: 20px 0;
+    }
+
+    .rodape_logo {
+        margin-left: 0; /* Remove o margin-left em telas menores */
+        margin-top: -23px; /* Adiciona espaço acima da logo */
+    }
+
+    .rodape_logo img {
+        width: 50px; /* Reduz o tamanho da logo */
+    }
+
+    .navegacao_main ul {
+        flex-direction: column; /* Alinhar itens verticalmente */
+        align-items: center;
+        gap: 10px; /* Espaço entre os itens */
+    }
+
+    .navegacao_main img {
+        width: 24px; /* Reduzir o tamanho dos ícones */
+    }
+
+    .redes_sociais_cor {
+        margin-bottom: 10px; /* Espaço entre o texto e os ícones */
+    }
+}
